@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace SportsCarRace
 {
-    public class Bettor : Bet  // This is class for better//
+    public class Bettor : Bet  // This show the bet name and cash //
     {
         public string Name { get; set; }
         public int Cash { get; set; }
@@ -16,12 +16,12 @@ namespace SportsCarRace
         public RadioButton BettorSelector { get; set; }   // This is for radio buttons//
         public Label PlayerActivityIndicator { get; set; }
 
-        public void UpdateLabels()   
+        public void UpdateLabels()   // this will update the cash of bet for particular bettor//
         {
             BettorSelector.Text = Name + " has $" + Cash;
         }
 
-        public void Reset()   // This is for reset //
+        public void Reset()   // This will show a message if bettor has not place any bet //
         {
             CurrentBet = null;
             PlayerActivityIndicator.Text = Name + " hasn't placed a bet";
@@ -37,7 +37,7 @@ namespace SportsCarRace
                 this.UpdateLabels();
                 return true;
             }
-            else
+            else // it tell if bettor does not has enough amount of price to bet on race//
             {
                 MessageBox.Show(this.Name + " does not have enough cash to cover the Bid"); // This is alert message which tell that you do not have enough money //
                 this.CurrentBet = null;

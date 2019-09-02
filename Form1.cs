@@ -16,8 +16,8 @@ namespace SportsCarRace
         {
             InitializeComponent();
 
-            int StartRace = Car1.Left;
-            int RaceTrackLength = TrackLength.Width - Car1.Right;
+            int StartRace = Car1.Left; // this function is for to start car race//
+            int RaceTrackLength = TrackLength.Width - Car1.Right;// this is the length of race track//
 
             Data.Cars[0] = new Car() { carImg = Car1, finishPosition = RaceTrackLength, startPosition = StartRace };
             Data.Cars[1] = new Car() { carImg = Car2, finishPosition = RaceTrackLength, startPosition = StartRace };
@@ -37,19 +37,19 @@ namespace SportsCarRace
             Data.Bidders[2].Reset();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e) // this button is for place bet//
         {
             Data.Bidders[Data.CurrentGambler].PlaceBid((int)numericUpDown1.Value, (int)numericUpDown2.Value);
             Data.Bidders[Data.CurrentGambler].UpdateLabels();
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e) // this button is to start the race//
         {
             timer1.Start();
             button2.Enabled = false;
         }
 
-        private void Timer1_Tick(object sender, EventArgs e)
+        private void Timer1_Tick(object sender, EventArgs e) // this function starts time//
         {
             for (int i = 0; i < Data.Cars.Length; i++)
             {
@@ -64,7 +64,7 @@ namespace SportsCarRace
             }
         }
 
-        private void ResetPositions()
+        private void ResetPositions() // this function reset everything//
         {
             Data.Cars[0].BackToStart();
             Data.Cars[1].BackToStart();
@@ -72,14 +72,14 @@ namespace SportsCarRace
             Data.Cars[3].BackToStart();
         }
 
-        private void ResetBids()
+        private void ResetBids() // this function reset all the bets//
         {
             label2.Text = "Player 1 hasn't placed a bet.";
             label2.Text = "Player 2 hasn't placed a bet.";
             label2.Text = "Player 3 hasn't placed a bet.";
         }
 
-        private void DeclareWinner(int Winner)
+        private void DeclareWinner(int Winner) // this function declare the winner of the race//
         {
             MessageBox.Show("Car #" + Winner + " is the Winning Car");
             for (int i = 0; i < Data.Bidders.Length; i++)
@@ -91,22 +91,32 @@ namespace SportsCarRace
             }
         }
 
-        private void RadioButton1_CheckedChanged(object sender, EventArgs e)
+        private void RadioButton1_CheckedChanged(object sender, EventArgs e) //this button is for player one//
         {
             Data.CurrentGambler = 0;
         }
 
-        private void RadioButton2_CheckedChanged(object sender, EventArgs e)
+        private void RadioButton2_CheckedChanged(object sender, EventArgs e) // this button is for player two//
         {
             Data.CurrentGambler = 1;
         }
 
-        private void RadioButton3_CheckedChanged(object sender, EventArgs e)
+        private void RadioButton3_CheckedChanged(object sender, EventArgs e) // this button is for player three//
         {
             Data.CurrentGambler = 2;
         }
 
-        private void Car1_Click(object sender, EventArgs e)
+        private void Car1_Click(object sender, EventArgs e) // this is for cars//
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e) // this function is for label//
+        {
+
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
         {
 
         }

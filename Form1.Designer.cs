@@ -63,18 +63,19 @@
             this.pictureBox1.BackgroundImage = global::SportsCarRace.Properties.Resources.track;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(17, 16);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1172, 406);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // Car1
             // 
             this.Car1.BackgroundImage = global::SportsCarRace.Properties.Resources.CarBlue;
             this.Car1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Car1.Location = new System.Drawing.Point(29, 48);
-            this.Car1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Car1.Margin = new System.Windows.Forms.Padding(4);
             this.Car1.Name = "Car1";
             this.Car1.Size = new System.Drawing.Size(80, 74);
             this.Car1.TabIndex = 1;
@@ -86,7 +87,7 @@
             this.Car2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Car2.BackgroundImage")));
             this.Car2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Car2.Location = new System.Drawing.Point(29, 129);
-            this.Car2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Car2.Margin = new System.Windows.Forms.Padding(4);
             this.Car2.Name = "Car2";
             this.Car2.Size = new System.Drawing.Size(80, 74);
             this.Car2.TabIndex = 2;
@@ -97,7 +98,7 @@
             this.Car3.BackgroundImage = global::SportsCarRace.Properties.Resources.CarRed;
             this.Car3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Car3.Location = new System.Drawing.Point(29, 210);
-            this.Car3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Car3.Margin = new System.Windows.Forms.Padding(4);
             this.Car3.Name = "Car3";
             this.Car3.Size = new System.Drawing.Size(80, 74);
             this.Car3.TabIndex = 3;
@@ -108,7 +109,7 @@
             this.Car4.BackgroundImage = global::SportsCarRace.Properties.Resources.CarYellow;
             this.Car4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Car4.Location = new System.Drawing.Point(29, 292);
-            this.Car4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Car4.Margin = new System.Windows.Forms.Padding(4);
             this.Car4.Name = "Car4";
             this.Car4.Size = new System.Drawing.Size(80, 74);
             this.Car4.TabIndex = 4;
@@ -119,7 +120,7 @@
             this.TrackLength.BackgroundImage = global::SportsCarRace.Properties.Resources.tracks;
             this.TrackLength.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TrackLength.Location = new System.Drawing.Point(16, 16);
-            this.TrackLength.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TrackLength.Margin = new System.Windows.Forms.Padding(4);
             this.TrackLength.Name = "TrackLength";
             this.TrackLength.Size = new System.Drawing.Size(1053, 372);
             this.TrackLength.TabIndex = 5;
@@ -129,7 +130,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(16, 438);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(110, 21);
             this.radioButton1.TabIndex = 6;
@@ -142,7 +143,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(16, 468);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(110, 21);
             this.radioButton2.TabIndex = 7;
@@ -155,7 +156,7 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(16, 497);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(110, 21);
             this.radioButton3.TabIndex = 8;
@@ -174,6 +175,7 @@
             this.label1.Size = new System.Drawing.Size(46, 18);
             this.label1.TabIndex = 9;
             this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label2
             // 
@@ -200,7 +202,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(805, 432);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(140, 22);
             this.numericUpDown1.TabIndex = 12;
@@ -219,7 +221,7 @@
             // numericUpDown2
             // 
             this.numericUpDown2.Location = new System.Drawing.Point(1047, 432);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(143, 22);
             this.numericUpDown2.TabIndex = 14;
@@ -227,7 +229,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(805, 468);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 28);
             this.button1.TabIndex = 15;
@@ -238,7 +240,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(1047, 468);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(143, 28);
             this.button2.TabIndex = 16;
@@ -272,7 +274,7 @@
             this.Controls.Add(this.Car1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TrackLength);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
